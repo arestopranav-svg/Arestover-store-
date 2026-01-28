@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARESTOP | NASA-Inspired Astronomy Commerce | 120fps</title>
+    
+    <!-- NASA-Inspired Meta Tags -->
+    <meta name="description" content="Premium astronomy equipment store with NASA-inspired design. Experience 120fps cinematic space exploration interface.">
+    <meta name="theme-color" content="#0a0e17">
+    <meta name="robots" content="index, follow">
+    
+    <!-- NASA JPL Font Inspiration [citation:2] -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Exo+2:wght@300;400;500;600&family=Space+Mono&family=Karla:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- NASA Horizon Design System Inspired [citation:6] -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/120fps-nasa.css">
+    
+    <!-- NASA Performance Analytics -->
+    <script>
+        window.performanceMarkers = {
+            loadStart: performance.now(),
+            nasaDesignSystem: 'Horizon-Inspired [citation:6]'
+        };
+        // NASA-inspired 120fps performance monitoring
+        class PerformanceMonitor {
+            constructor() {
+                this.frameTimes = [];
+                this.lastTime = performance.now();
+                this.monitorActive = true;
+                this.startMonitoring();
+            }
+            
+            startMonitoring() {
+                const monitorFrame = () => {
+                    const now = performance.now();
+                    const frameTime = now - this.lastTime;
+                    this.frameTimes.push(frameTime);
+                    
+                    if (this.frameTimes.length > 60) {
+                        this.frameTimes.shift();
+                        const avgFrameTime = this.frameTimes.reduce((a, b) => a + b) / this.frameTimes.length;
+                        const fps = 1000 / avgFrameTime;
+                        
+                        if (fps < 55) {
+                            console.warn(`NASA Performance Alert: FPS dropped to ${fps.toFixed(1)}`);
+                            this.triggerOptimization();
+                        }
+                    }
+                    
+                    this.lastTime = now;
+                    if (this.monitorActive) {
+                        requestAnimationFrame(monitorFrame);
+                    }
+                };
+                requestAnimationFrame(monitorFrame);
+            }
+            
+            triggerOptimization() {
+                // NASA-inspired dynamic performance optimization
+                document.documentElement.classList.add('performance-mode');
+            }
+        }
+    </script>
+</head>
+<body class="nasa-theme" data-gravity="1.0">
+    <!-- NASA Loading Sequence -->
+    <div id="nasa-loader" class="nasa-loading-screen">
+        <div class="mission-patch">
+            <div class="patch-inner">
+                <div class="patch-orbit">
+                    <div class="patch-satellite" data-speed="2.5"></div>
+                </div>
+                <div class="patch-planet" data-speed="1.8"></div>
+                <div class="patch-stars">
+                    <div class="star" style="--star-index:0"></div>
+                    <div class="star" style="--star-index:1"></div>
+                    <div class="star" style="--star-index:2"></div>
+                    <div class="star" style="--star-index:3"></div>
+                    <div class="star" style="--star-index:4"></div>
+                </div>
+            </div>
+        </div>
+        <div class="loading-sequence">
+            <div class="sequence-item" data-sequence="1">INITIALIZING NASA-STACK SYSTEMS</div>
+            <div class="sequence-item" data-sequence="2">CALIBRATING 120FPS ANIMATION ENGINE</div>
+            <div class="sequence-item" data-sequence="3">LOADING HORIZON DESIGN SYSTEM [citation:6]</div>
+            <div class="sequence-item" data-sequence="4">ENGAGING CINEMATIC RENDER PIPELINE</div>
+            <div class="sequence-item" data-sequence="5">SYSTEMS NOMINAL - LAUNCH IMMINENT</div>
+        </div>
+        <div class="loading-progress">
+            <div class="progress-bar">
+                <div class="progress-fill" data-progress="0"></div>
+            </div>
+            <div class="progress-text">T-<span class="countdown">10</span></div>
+        </div>
+    </div>
+
+    <!-- NASA Mission Control Navigation -->
+    <nav class="nasa-navigation" data-state="nominal">
+        <div class="nav-container">
+            <!-- Mission Patch Logo -->
+            <div class="mission-logo">
+                <div class="logo-orbital">
+                    <div class="logo-core">ARES</div>
+                    <div class="logo-orbit"></div>
+                    <div class="logo-satellite">TOP</div>
+                </div>
+                <div class="logo-subtitle">ASTRONOMY COMMERCE</div>
+                <div class="mission-tag">EST. 2023 | 120FPS CINEMATIC</div>
+            </div>
+
+            <!-- Primary Mission Controls -->
+            <div class="mission-controls">
+                <div class="control-group">
+                    <button class="control-btn" data-control="products">
+                        <span class="control-icon">📡</span>
+                        <span class="control-label">PRODUCTS</span>
+                        <span class="control-status" data-status="active"></span>
+                    </button>
+                    <button class="control-btn" data-control="missions">
+                        <span class="control-icon">🚀</span>
+                        <span class="control-label">MISSIONS</span>
+                        <span class="control-status" data-status="standby"></span>
+                    </button>
+                    <button class="control-btn" data-control="technology">
+                        <span class="control-icon">🔭</span>
+                        <span class="control-label">TECHNOLOGY</span>
+                        <span class="control-status" data-status="standby"></span>
+                    </button>
+                </div>
+                
+                <!-- NASA JPL-Inspired Search [citation:2] -->
+                <div class="nasa-search">
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="SEARCH EXOPLANETS & EQUIPMENT" 
+                               data-inspired="NASA JPL [citation:2]">
+                        <button class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comms & Cart -->
+            <div class="comms-cart">
+                <div class="comms-channel" data-channel="whatsapp">
+                    <div class="comms-indicator" data-status="online"></div>
+                    <span class="comms-label">MISSION CONTROL</span>
+                    <span class="comms-frequency">+91 9957811508</span>
+                </div>
+                <button class="cart-btn" data-items="0">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count">0</span>
+                    <span class="cart-label">CARGO</span>
+                </button>
+            </div>
+
+            <!-- Mobile Mission Toggle -->
+            <button class="mobile-toggle" aria-label="Mission Menu">
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+                <span class="toggle-label">MENU</span>
+            </button>
+        </div>
+
+        <!-- Sub Navigation - Moon to Mars Architecture [citation:3][citation:7] -->
+        <div class="sub-navigation">
+            <div class="subnav-container">
+                <a href="#lunar" class="subnav-item" data-mission="artemis">
+                    <span class="subnav-icon">🌙</span>
+                    <span class="subnav-label">LUNAR EXPLORATION</span>
+                    <span class="subnav-badge" data-badge="Artemis"></span>
+                </a>
+                <a href="#mars" class="subnav-item" data-mission="mars">
+                    <span class="subnav-icon">♂</span>
+                    <span class="subnav-label">MARS CAMPAIGN</span>
+                    <span class="subnav-badge" data-badge="MAT [citation:1]"></span>
+                </a>
+                <a href="#robotics" class="subnav-item" data-mission="robotics">
+                    <span class="subnav-icon">🤖</span>
+                    <span class="subnav-label">SURFACE ROBOTICS</span>
+                    <span class="subnav-badge" data-badge="NIAC [citation:4]"></span>
+                </a>
+                <a href="#habitation" class="subnav-item" data-mission="habitat">
+                    <span class="subnav-icon">🏠</span>
+                    <span class="subnav-label">HABITATION SYSTEMS</span>
+                    <span class="subnav-badge" data-badge="Arch 8.0 [citation:5]"></span>
+                </a>
+                <a href="#future" class="subnav-item" data-mission="future">
+                    <span class="subnav-icon">✨</span>
+                    <span class="subnav-label">FUTURE VISIONS</span>
+                    <span class="subnav-badge" data-badge="JPL [citation:2]"></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Mission Interface -->
+    <main class="mission-interface">
+        <!-- Section 1: Hero Launch Sequence -->
+        <section class="mission-hero" id="launch">
+            <div class="hero-container">
+                <!-- Left: Mission Parameters -->
+                <div class="mission-parameters">
+                    <div class="parameter-display" data-parameter="countdown">
+                        <div class="parameter-label">MISSION ELAPSED TIME</div>
+                        <div class="parameter-value">00:00:00:00</div>
+                        <div class="parameter-unit">DD:HH:MM:SS</div>
+                    </div>
+                    <div class="parameter-display" data-parameter="fps">
+                        <div class="parameter-label">ANIMATION PERFORMANCE</div>
+                        <div class="parameter-value">120</div>
+                        <div class="parameter-unit">FPS</div>
+                    </div>
+                    <div class="parameter-display" data-parameter="products">
+                        <div class="parameter-label">ACTIVE PRODUCTS</div>
+                        <div class="parameter-value">24</div>
+                        <div class="parameter-unit">ITEMS</div>
+                    </div>
+                    <div class="parameter-display" data-parameter="orders">
+                        <div class="parameter-label">ORDERS IN FLIGHT</div>
+                        <div class="parameter-value">156</div>
+                        <div class="parameter-unit">ACTIVE</div>
+                    </div>
+                </div>
+
+                <!-- Center: Hero Visual -->
+                <div class="hero-visual">
+                    <!-- NASA Moon to Mars Visualization [citation:3] -->
+                    <div class="mission-visualization" data-visualization="moon-to-mars">
+                        <div class="viz-earth" data-speed="0.2"></div>
+                        <div class="viz-moon" data-speed="1.5" data-distance="384400"></div>
+                        <div class="viz-mars" data-speed="0.8" data-distance="225000000"></div>
+                        <div class="viz-trajectory" data-mission="artemis"></div>
+                        <div class="viz-orion" data-speed="3.0"></div>
+                    </div>
+                    
+                    <!-- Mission Title -->
+                    <div class="mission-title">
+                        <h1 class="title-primary">EXPLORE THE <span class="gradient-text">COSMOS</span></h1>
+                        <h2 class="title-secondary">NASA-INSPIRED ASTRONOMY EQUIPMENT</h2>
+                        <p class="title-description">
+                            Premium telescopes, space-grade apparel, and exploration technology 
+                            inspired by NASA's Moon to Mars Architecture [citation:3]
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right: Mission Controls -->
+                <div class="hero-controls">
+                    <button class="mission-cta" data-action="explore">
+                        <span class="cta-icon">🚀</span>
+                        <span class="cta-label">BEGIN EXPLORATION</span>
+                        <span class="cta-sub">SCROLL TO LAUNCH</span>
+                    </button>
+                    
+                    <!-- Live Mission Feed -->
+                    <div class="live-feed">
+                        <div class="feed-header">
+                            <span class="feed-title">LIVE MISSION UPDATES</span>
+                            <span class="feed-badge">LIVE</span>
+                        </div>
+                        <div class="feed-content">
+                            <div class="feed-item" data-mission="artemis">
+                                <span class="feed-time">T+00:02:15</span>
+                                <span class="feed-text">Artemis III Lunar Landing Site Selected</span>
+                            </div>
+                            <div class="feed-item" data-mission="iss">
+                                <span class="feed-time">T+00:01:48</span>
+                                <span class="feed-text">ISS Completes Orbit 145,678</span>
+                            </div>
+                            <div class="feed-item" data-mission="jpl">
+                                <span class="feed-time">T+00:01:22</span>
+                                <span class="feed-text">JPL Releases New Exoplanet Data [citation:2]</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Guidance -->
+            <div class="scroll-guidance">
+                <div class="guidance-text">SCROLL FOR MISSION BRIEFING</div>
+                <div class="guidance-arrow">
+                    <div class="arrow-line"></div>
+                    <div class="arrow-head"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Moon to Mars Architecture [citation:3][citation:7] -->
+        <section class="architecture-section" id="architecture">
+            <div class="section-header" data-nasa-section="architecture">
+                <div class="header-decoration">
+                    <div class="decoration-line"></div>
+                    <div class="decoration-symbol">🜨</div>
+                    <div class="decoration-line"></div>
+                </div>
+                <h2 class="section-title">MOON TO MARS ARCHITECTURE</h2>
+                <p class="section-subtitle">
+                    Inspired by NASA's blueprint for deep space exploration [citation:3]. 
+                    Our products support every segment of the journey.
+                </p>
+            </div>
+
+            <!-- Architecture Segments -->
+            <div class="architecture-grid">
+                <!-- Segment 1: Human Lunar Return [citation:7] -->
+                <div class="architecture-card" data-segment="lunar-return">
+                    <div class="segment-header">
+                        <div class="segment-icon">🌙</div>
+                        <h3 class="segment-title">HUMAN LUNAR RETURN</h3>
+                        <div class="segment-badge" data-program="Artemis">ARTEMIS</div>
+                    </div>
+                    <p class="segment-description">
+                        Initial Artemis missions returning humanity to the Moon. 
+                        Core systems validation for lunar operations [citation:7].
+                    </p>
+                    <div class="segment-products">
+                        <span class="product-tag" data-type="telescope">LUNAR TELESCOPES</span>
+                        <span class="product-tag" data-type="imaging">NIGHT VISION</span>
+                        <span class="product-tag" data-type="apparel">ARTEMIS APPAREL</span>
+                    </div>
+                    <button class="segment-explore" data-explore="lunar">
+                        EXPLORE LUNAR GEAR
+                    </button>
+                </div>
+
+                <!-- Segment 2: Foundational Exploration [citation:7] -->
+                <div class="architecture-card" data-segment="foundational">
+                    <div class="segment-header">
+                        <div class="segment-icon">🛰️</div>
+                        <h3 class="segment-title">FOUNDATIONAL EXPLORATION</h3>
+                        <div class="segment-badge" data-program="Gateway">GATEWAY</div>
+                    </div>
+                    <p class="segment-description">
+                        Expanded lunar operations and Mars risk reduction. 
+                        Extended duration missions and regional exploration [citation:7].
+                    </p>
+                    <div class="segment-products">
+                        <span class="product-tag" data-type="tracking">STAR TRACKERS</span>
+                        <span class="product-tag" data-type="software">PLANETARY SOFTWARE</span>
+                        <span class="product-tag" data-type="camping">EXPEDITION GEAR</span>
+                    </div>
+                    <button class="segment-explore" data-explore="foundational">
+                        EXPLORE EXPEDITION GEAR
+                    </button>
+                </div>
+
+                <!-- Segment 3: Sustained Lunar Evolution [citation:7] -->
+                <div class="architecture-card" data-segment="sustained">
+                    <div class="segment-header">
+                        <div class="segment-icon">🏗️</div>
+                        <h3 class="segment-title">SUSTAINED LUNAR EVOLUTION</h3>
+                        <div class="segment-badge" data-program="ISRU">ISRU</div>
+                    </div>
+                    <p class="segment-description">
+                        Long-term lunar presence and economic opportunity. 
+                        Resource utilization and science capability growth [citation:7].
+                    </p>
+                    <div class="segment-products">
+                        <span class="product-tag" data-type="research">RESEARCH GRADE</span>
+                        <span class="product-tag" data-type="photography">ASTROPHOTOGRAPHY</span>
+                        <span class="product-tag" data-type="education">EDUCATION KITS</span>
+                    </div>
+                    <button class="segment-explore" data-explore="sustained">
+                        EXPLORE RESEARCH GEAR
+                    </button>
+                </div>
+
+                <!-- Segment 4: Humans to Mars [citation:7] -->
+                <div class="architecture-card" data-segment="mars">
+                    <div class="segment-header">
+                        <div class="segment-icon">♂</div>
+                        <h3 class="segment-title">HUMANS TO MARS</h3>
+                        <div class="segment-badge" data-program="Mars">MAT [citation:1]</div>
+                    </div>
+                    <p class="segment-description">
+                        Establishing human presence on Mars. 
+                        Initial capabilities for Martian surface operations [citation:7].
+                    </p>
+                    <div class="segment-products">
+                        <span class="product-tag" data-type="premium">FLAGSHIP TELESCOPES</span>
+                        <span class="product-tag" data-type="spectroscopy">SPECTROMETERS</span>
+                        <span class="product-tag" data-type="collectibles">MARS COLLECTIBLES</span>
+                    </div>
+                    <button class="segment-explore" data-explore="mars">
+                        EXPLORE MARS GEAR
+                    </button>
+                </div>
+            </div>
+
+            <!-- Architecture Visualization -->
+            <div class="architecture-visual">
+                <div class="visual-timeline">
+                    <div class="timeline-node" data-year="2024" data-mission="Artemis II"></div>
+                    <div class="timeline-node" data-year="2025" data-mission="Gateway"></div>
+                    <div class="timeline-node" data-year="2026" data-mission="Artemis Base"></div>
+                    <div class="timeline-node" data-year="2030" data-mission="Mars Prep"></div>
+                    <div class="timeline-node" data-year="2035" data-mission="Mars Landing"></div>
+                </div>
+                <div class="visual-label">NASA MOON TO MARS ROADMAP [citation:3]</div>
+            </div>
+        </section>
+
+        <!-- Section 3: Products Grid - Horizon Design System Inspired [citation:6] -->
+        <section class="products-section" id="products">
+            <div class="section-header" data-nasa-section="products">
+                <div class="header-decoration">
+                    <div class="decoration-line"></div>
+                    <div class="decoration-symbol">🔭</div>
+                    <div class="decoration-line"></div>
+                </div>
+                <h2 class="section-title">EXPLORATION EQUIPMENT</h2>
+                <p class="section-subtitle">
+                    Curated astronomy products organized by NASA mission segments. 
+                    Each item enables your personal space exploration.
+                </p>
+            </div>
+
+            <!-- Product Filter System -->
+            <div class="product-filter-system">
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all" data-mission="all">
+                        <span class="filter-icon">🌌</span>
+                        ALL SYSTEMS
+                    </button>
+                    <button class="filter-btn" data-filter="telescope" data-mission="artemis">
+                        <span class="filter-icon">🌙</span>
+                        LUNAR OBSERVATION
+                    </button>
+                    <button class="filter-btn" data-filter="imaging" data-mission="mars">
+                        <span class="filter-icon">♂</span>
+                        MARS IMAGING
+                    </button>
+                    <button class="filter-btn" data-filter="apparel" data-mission="iss">
+                        <span class="filter-icon">👨‍🚀</span>
+                        CREW APPAREL
+                    </button>
+                    <button class="filter-btn" data-filter="accessories" data-mission="gateway">
+                        <span class="filter-icon">🛠️</span>
+                        MISSION ACCESSORIES
+                    </button>
+                </div>
+                
+                <!-- Filter Status Display -->
+                <div class="filter-status">
+                    <div class="status-indicator" data-status="nominal"></div>
+                    <span class="status-text">24 PRODUCTS ACTIVE • 5 CATEGORIES • SYSTEMS NOMINAL</span>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be dynamically loaded here -->
+                <!-- Each product card will include NASA mission metadata -->
+            </div>
+
+            <!-- Products Grid Controls -->
+            <div class="grid-controls">
+                <button class="control-prev" aria-label="Previous products">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="control-pagination">
+                    <span class="page-current">1</span>
+                    <span class="page-separator">/</span>
+                    <span class="page-total">4</span>
+                </div>
+                <button class="control-next" aria-label="Next products">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <button class="control-view" data-view="grid">
+                    <span class="view-icon">⏹️</span>
+                    GRID VIEW
+                </button>
+            </div>
+        </section>
+
+        <!-- Section 4: NASA Technology Showcase [citation:4] -->
+        <section class="technology-section" id="technology">
+            <div class="section-header" data-nasa-section="technology">
+                <div class="header-decoration">
+                    <div class="decoration-line"></div>
+                    <div class="decoration-symbol">⚡</div>
+                    <div class="decoration-line"></div>
+                </div>
+                <h2 class="section-title">NASA-INSPIRED TECHNOLOGY</h2>
+                <p class="section-subtitle">
+                    Featuring concepts from NASA's Innovative Advanced Concepts program [citation:4]. 
+                    Our products incorporate cutting-edge space technology.
+                </p>
+            </div>
+
+            <div class="technology-grid">
+                <!-- NIAC Technology 1: FLOAT System [citation:4] -->
+                <div class="tech-card" data-niac="FLOAT [citation:4]">
+                    <div class="tech-header">
+                        <div class="tech-badge" data-program="NIAC">NIAC PHASE I</div>
+                        <h3 class="tech-title">MAGLEV LUNAR TRANSPORT</h3>
+                    </div>
+                    <p class="tech-description">
+                        Inspired by NASA's FLOAT system: flexible tracks for magnetic robots 
+                        that levitate and transport cargo on the Moon [citation:4].
+                    </p>
+                    <div class="tech-applications">
+                        <span class="application">PRECISION MOUNTING</span>
+                        <span class="application">SMOOTH TRACKING</span>
+                        <span class="application">ZERO VIBRATION</span>
+                    </div>
+                    <div class="tech-visual">
+                        <div class="visual-track"></div>
+                        <div class="visual-robot"></div>
+                    </div>
+                </div>
+
+                <!-- NIAC Technology 2: Light Bender [citation:4] -->
+                <div class="tech-card" data-niac="Light Bender [citation:4]">
+                    <div class="tech-header">
+                        <div class="tech-badge" data-program="NIAC">NIAC PHASE I</div>
+                        <h3 class="tech-title">ADAPTIVE OPTICS SYSTEM</h3>
+                    </div>
+                    <p class="tech-description">
+                        Based on NASA's Light Bender concept: telescope optics that capture, 
+                        concentrate and focus light with unprecedented efficiency [citation:4].
+                    </p>
+                    <div class="tech-applications">
+                        <span class="application">LIGHT COLLECTION</span>
+                        <span class="application">IMAGE CLARITY</span>
+                        <span class="application">ENERGY EFFICIENT</span>
+                    </div>
+                    <div class="tech-visual">
+                        <div class="visual-light"></div>
+                        <div class="visual-mirror"></div>
+                    </div>
+                </div>
+
+                <!-- NIAC Technology 3: Space Structures [citation:4] -->
+                <div class="tech-card" data-niac="Structures [citation:4]">
+                    <div class="tech-header">
+                        <div class="tech-badge" data-program="NIAC">NIAC PHASE I</div>
+                        <h3 class="tech-title">DEPLOYABLE STRUCTURES</h3>
+                    </div>
+                    <p class="tech-description">
+                        From NASA's kilometer-scale structure research: lightweight, 
+                        deployable designs that enable large-scale observation platforms [citation:4].
+                    </p>
+                    <div class="tech-applications">
+                        <span class="application">PORTABLE SETUP</span>
+                        <span class="application">STABLE BASE</span>
+                        <span class="application">SCALABLE DESIGN</span>
+                    </div>
+                    <div class="tech-visual">
+                        <div class="visual-structure"></div>
+                        <div class="visual-deploy"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Mission Control Order System -->
+        <section class="order-section" id="orders">
+            <div class="section-header" data-nasa-section="orders">
+                <div class="header-decoration">
+                    <div class="decoration-line"></div>
+                    <div class="decoration-symbol">📡</div>
+                    <div class="decoration-line"></div>
+                </div>
+                <h2 class="section-title">MISSION CONTROL ORDERING</h2>
+                <p class="section-subtitle">
+                    Direct WhatsApp integration with NASA-style mission logging. 
+                    Every order is treated as a space mission with full tracking.
+                </p>
+            </div>
+
+            <div class="order-interface">
+                <!-- Left: Order Status Board -->
+                <div class="order-status">
+                    <div class="status-header">
+                        <h3 class="status-title">ORDER STATUS BOARD</h3>
+                        <div class="status-time">LAST UPDATE: <span class="time-value">00:00:00 UTC</span></div>
+                    </div>
+                    
+                    <div class="status-grid">
+                        <div class="status-item" data-status="prelaunch">
+                            <div class="item-icon">🔄</div>
+                            <div class="item-details">
+                                <div class="item-title">ORDERS IN PREPARATION</div>
+                                <div class="item-value">12</div>
+                            </div>
+                        </div>
+                        <div class="status-item" data-status="launched">
+                            <div class="item-icon">🚀</div>
+                            <div class="item-details">
+                                <div class="item-title">ORDERS IN TRANSIT</div>
+                                <div class="item-value">43</div>
+                            </div>
+                        </div>
+                        <div class="status-item" data-status="orbit">
+                            <div class="item-icon">🛰️</div>
+                            <div class="item-details">
+                                <div class="item-title">ORDERS IN DELIVERY</div>
+                                <div class="item-value">28</div>
+                            </div>
+                        </div>
+                        <div class="status-item" data-status="landed">
+                            <div class="item-icon">🪐</div>
+                            <div class="item-details">
+                                <div class="item-title">ORDERS DELIVERED</div>
+                                <div class="item-value">156</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Order Statistics -->
+                    <div class="order-stats">
+                        <div class="stat-item">
+                            <div class="stat-label">SUCCESS RATE</div>
+                            <div class="stat-value">99.8%</div>
+                            <div class="stat-bar">
+                                <div class="bar-fill" data-percent="99.8"></div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">AVG DELIVERY TIME</div>
+                            <div class="stat-value">3.2 DAYS</div>
+                            <div class="stat-bar">
+                                <div class="bar-fill" data-percent="85"></div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">CUSTOMER SATISFACTION</div>
+                            <div class="stat-value">4.9/5.0</div>
+                            <div class="stat-bar">
+                                <div class="bar-fill" data-percent="98"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Order Form -->
+                <div class="order-form-container">
+                    <div class="form-header">
+                        <h3 class="form-title">INITIATE MISSION ORDER</h3>
+                        <div class="form-subtitle">Direct WhatsApp to Mission Control: +91 9957811508</div>
+                    </div>
+
+                    <!-- Product Selection -->
+                    <div class="form-section">
+                        <div class="section-label">1. SELECT PAYLOAD</div>
+                        <div class="product-selector">
+                            <div class="selector-active">
+                                <div class="active-image"></div>
+                                <div class="active-details">
+                                    <div class="active-name">ARTEMIS LUNAR TELESCOPE</div>
+                                    <div class="active-price">₹24,999</div>
+                                </div>
+                                <button class="active-change">CHANGE</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mission Parameters -->
+                    <div class="form-section">
+                        <div class="section-label">2. SET MISSION PARAMETERS</div>
+                        <div class="parameter-controls">
+                            <!-- Size Selector -->
+                            <div class="parameter-group">
+                                <label class="parameter-label">CREW SIZE (APPAREL)</label>
+                                <div class="size-selector">
+                                    <button class="size-option" data-size="XS">XS</button>
+                                    <button class="size-option" data-size="S">S</button>
+                                    <button class="size-option active" data-size="M">M</button>
+                                    <button class="size-option" data-size="L">L</button>
+                                    <button class="size-option" data-size="XL">XL</button>
+                                </div>
+                            </div>
+
+                            <!-- Quantity Control -->
+                            <div class="parameter-group">
+                                <label class="parameter-label">PAYLOAD QUANTITY</label>
+                                <div class="quantity-control">
+                                    <button class="quantity-btn" data-action="decrease">−</button>
+                                    <div class="quantity-display">
+                                        <span class="quantity-value">1</span>
+                                        <span class="quantity-unit">UNIT</span>
+                                    </div>
+                                    <button class="quantity-btn" data-action="increase">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Destination Details -->
+                    <div class="form-section">
+                        <div class="section-label">3. SET DESTINATION COORDINATES</div>
+                        <div class="destination-inputs">
+                            <div class="input-group">
+                                <label class="input-label">COMMANDER NAME *</label>
+                                <input type="text" class="nasa-input" placeholder="ENTER YOUR NAME" 
+                                       data-required="true">
+                            </div>
+                            <div class="input-group">
+                                <label class="input-label">DESTINATION ADDRESS *</label>
+                                <textarea class="nasa-textarea" placeholder="ENTER COMPLETE DELIVERY ADDRESS" 
+                                          rows="3" data-required="true"></textarea>
+                            </div>
+                            <div class="input-group">
+                                <label class="input-label">COMMS FREQUENCY (PHONE) *</label>
+                                <input type="tel" class="nasa-input" placeholder="+91 XXXXXXXXXX" 
+                                       data-required="true">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mission Summary -->
+                    <div class="form-section">
+                        <div class="section-label">4. MISSION SUMMARY</div>
+                        <div class="mission-summary">
+                            <div class="summary-item">
+                                <span class="summary-label">PAYLOAD</span>
+                                <span class="summary-value">ARTEMIS LUNAR TELESCOPE</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">QUANTITY</span>
+                                <span class="summary-value">1 UNIT</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">TOTAL MASS</span>
+                                <span class="summary-value">5.2 KG</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">DELIVERY ORBIT</span>
+                                <span class="summary-value">LOW EARTH ORBIT</span>
+                            </div>
+                            <div class="summary-item total">
+                                <span class="summary-label">MISSION COST</span>
+                                <span class="summary-value">₹24,999</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Launch Button -->
+                    <button class="launch-order" id="whatsapp-launch">
+                        <div class="launch-sequence">
+                            <span class="sequence-text">INITIATE WHATSAPP TRANSMISSION</span>
+                            <span class="sequence-icon">📡</span>
+                        </div>
+                        <div class="launch-subtext">
+                            Transmission Format: Product • Size • Quantity • Address • Name
+                        </div>
+                    </button>
+
+                    <!-- Transmission Preview -->
+                    <div class="transmission-preview">
+                        <div class="preview-header">WHATSAPP TRANSMISSION PREVIEW</div>
+                        <div class="preview-content">
+                            Hello, I want to place an order:<br>
+                            Product: Artemis Lunar Telescope<br>
+                            Size: M<br>
+                            Quantity: 1<br>
+                            Address: [Your Address]<br>
+                            Name: [Your Name]
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: JPL Visions of the Future Gallery [citation:2] -->
+        <section class="gallery-section" id="gallery">
+            <div class="section-header" data-nasa-section="gallery">
+                <div class="header-decoration">
+                    <div class="decoration-line"></div>
+                    <div class="decoration-symbol">🎨</div>
+                    <div class="decoration-line"></div>
+                </div>
+                <h2 class="section-title">VISIONS OF THE FUTURE</h2>
+                <p class="section-subtitle">
+                    Inspired by JPL's iconic travel posters [citation:2]. 
+                    Imagine exploring these destinations with our equipment.
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Mars Poster [citation:2] -->
+                <div class="gallery-item" data-destination="Mars [citation:2]">
+                    <div class="item-poster" style="background: linear-gradient(135deg, #c1440e, #8b2a0a)">
+                        <div class="poster-title">MARS</div>
+                        <div class="poster-subtitle">VISIT THE RED PLANET</div>
+                        <div class="poster-detail">Olympus Mons in background • Underground water hints</div>
+                    </div>
+                    <div class="item-caption">
+                        <h3 class="caption-title">MARS EXPLORER KIT</h3>
+                        <p class="caption-text">
+                            Complete telescope and imaging package for Martian observation. 
+                            Includes filters for dust storms and polar caps.
+                        </p>
+                        <button class="caption-action" data-explore="mars">EXPLORE MARS GEAR</button>
+                    </div>
+                </div>
+
+                <!-- Europa Poster -->
+                <div class="gallery-item" data-destination="Europa">
+                    <div class="item-poster" style="background: linear-gradient(135deg, #4a6fa5, #2c3e50)">
+                        <div class="poster-title">EUROPA</div>
+                        <div class="poster-subtitle">WORLD OF ICY MYSTERIES</div>
+                        <div class="poster-detail">Subsurface ocean • Cracked ice surface</div>
+                    </div>
+                    <div class="item-caption">
+                        <h3 class="caption-title">ICE WORLD IMAGING SET</h3>
+                        <p class="caption-text">
+                            Specialized for icy moon observation. Enhanced contrast for 
+                            surface feature detection and cryovolcano monitoring.
+                        </p>
+                        <button class="caption-action" data-explore="europa">EXPLORE ICE GEAR</button>
+                    </div>
+                </div>
+
+                <!-- Exoplanet Poster [citation:2] -->
+                <div class="gallery-item" data-destination="Kepler-186f [citation:2]">
+                    <div class="item-poster" style="background: linear-gradient(135deg, #8b4513, #654321)">
+                        <div class="poster-title">KEPLER-186F</div>
+                        <div class="poster-subtitle">EARTH'S COUSIN</div>
+                        <div class="poster-detail">First Earth-size planet in habitable zone • Different star spectrum</div>
+                    </div>
+                    <div class="item-caption">
+                        <h3 class="caption-title">EXOPLANET DETECTION KIT</h3>
+                        <p class="caption-text">
+                            Professional-grade equipment for exoplanet observation. 
+                            Transit detection and atmospheric spectroscopy capable.
+                        </p>
+                        <button class="caption-action" data-explore="exoplanet">EXPLORE EXOPLANET GEAR</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Navigation -->
+            <div class="gallery-nav">
+                <button class="nav-btn prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="nav-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="nav-btn next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- Section 7: Mission Footer -->
+        <footer class="mission-footer">
+            <div class="footer-container">
+                <!-- Mission Summary -->
+                <div class="footer-mission">
+                    <div class="mission-logo">
+                        <div class="logo-symbol">ARES</div>
+                        <div class="logo-text">ASTRONOMY COMMERCE</div>
+                    </div>
+                    <p class="mission-statement">
+                        Bringing NASA-grade exploration technology to astronomers worldwide. 
+                        Inspired by Moon to Mars Architecture [citation:3] and JPL innovations [citation:2].
+                    </p>
+                    <div class="mission-social">
+                        <a href="#" class="social-link" data-platform="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" data-platform="instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" data-platform="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/919957811508" class="social-link" data-platform="whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- NASA Resources -->
+                <div class="footer-resources">
+                    <h3 class="resources-title">NASA RESOURCES</h3>
+                    <ul class="resources-list">
+                        <li><a href="https://www.nasa.gov/moontomarsarchitecture/" target="_blank">Moon to Mars Architecture [citation:3]</a></li>
+                        <li><a href="https://www.jpl.nasa.gov/galleries/visions-of-the-future/" target="_blank">JPL Visions of the Future [citation:2]</a></li>
+                        <li><a href="https://www.nasa.gov/centers-and-facilities/jpl/futuristic-space-technology-concepts-selected-by-nasa-for-initial-study/" target="_blank">NIAC Technology [citation:4]</a></li>
+                        <li><a href="https://www.nasa.gov/reference/jsc-planning-architecture-analysis/" target="_blank">Planning & Analysis [citation:1]</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h3 class="links-title">MISSION CONTROL</h3>
+                    <ul class="links-list">
+                        <li><a href="#products">Exploration Equipment</a></li>
+                        <li><a href="#architecture">Moon to Mars Segments</a></li>
+                        <li><a href="#technology">NASA Technology</a></li>
+                        <li><a href="#orders">Mission Ordering</a></li>
+                        <li><a href="#gallery">Future Visions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-contact">
+                    <h3 class="contact-title">MISSION CONTROL CONTACT</h3>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <span class="info-icon">📡</span>
+                            <span class="info-text">+91 9957811508 (WhatsApp)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">🛰️</span>
+                            <span class="info-text">Direct WhatsApp Order Transmission</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">🌎</span>
+                            <span class="info-text">India • Worldwide Shipping</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Newsletter -->
+                    <div class="newsletter">
+                        <div class="newsletter-label">JOIN MISSION UPDATES</div>
+                        <div class="newsletter-input">
+                            <input type="email" placeholder="ENTER YOUR EMAIL" class="email-input">
+                            <button class="email-submit">SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="bottom-container">
+                    <div class="copyright">
+                        © 2026 ARESTOP ASTRONOMY COMMERCE. INSPIRED BY NASA MISSION ARCHITECTURE.
+                    </div>
+                    <div class="footer-notes">
+                        <span class="note">120FPS CINEMATIC EXPERIENCE</span>
+                        <span class="note">HORIZON DESIGN SYSTEM INSPIRED [citation:6]</span>
+                        <span class="note">MOON TO MARS ARCHITECTURE [citation:3]</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Performance Monitor -->
+            <div class="performance-monitor">
+                <div class="monitor-display">
+                    <span class="monitor-label">ANIMATION PERFORMANCE:</span>
+                    <span class="monitor-value">120</span>
+                    <span class="monitor-unit">FPS</span>
+                </div>
+                <div class="monitor-status" data-status="nominal">SYSTEMS NOMINAL</div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Mission Control Modal -->
+    <div class="mission-modal" id="product-modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 class="modal-title">PRODUCT MISSION BRIEFING</h3>
+                <button class="modal-close">
+                    <span class="close-icon">✕</span>
+                    <span class="close-label">CLOSE</span>
+                </button>
+            </div>
+            <div class="modal-content">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+            <div class="modal-actions">
+                <button class="action-btn" data-action="whatsapp">
+                    <span class="action-icon">📡</span>
+                    INITIATE WHATSAPP ORDER
+                </button>
+                <button class="action-btn" data-action="specs">
+                    <span class="action-icon">📊</span>
+                    VIEW FULL SPECIFICATIONS
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- NASA Performance Overlay -->
+    <div class="performance-overlay">
+        <div class="overlay-stats">
+            <div class="stat" data-stat="fps">
+                <div class="stat-label">FPS</div>
+                <div class="stat-value">120</div>
+            </div>
+            <div class="stat" data-stat="load">
+                <div class="stat-label">LOAD</div>
+                <div class="stat-value">2.4s</div>
+            </div>
+            <div class="stat" data-stat="memory">
+                <div class="stat-label">MEM</div>
+                <div class="stat-value">64MB</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Floating Action -->
+    <a href="https://wa.me/919957811508" class="whatsapp-float" target="_blank">
+        <div class="float-icon">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <div class="float-label">MISSION CONTROL</div>
+    </a>
+
+    <!-- NASA JavaScript Systems -->
+    <script src="js/nasa-120fps-engine.js"></script>
+    <script src="js/mission-control.js"></script>
+    <script src="js/products-system.js"></script>
+    <script>
+        // NASA Performance System Initialization
+        window.addEventListener('load', () => {
+            const perfMonitor = new PerformanceMonitor();
+            window.performanceMarkers.loadComplete = performance.now();
+            
+            // Initialize 120fps animation system
+            initNASAAnimations();
+            
+            // Initialize mission control
+            initMissionControl();
+            
+            // Load products with NASA metadata
+            loadNASAProducts();
+            
+            // Start cinematic sequences
+            startCinematicSequences();
+        });
+        
+        // WhatsApp Order System
+        function initiateWhatsAppOrder(product, size, quantity, address, name) {
+            const message = `Hello, I want to place an order:\nProduct: ${product}\nSize: ${size}\nQuantity: ${quantity}\nAddress: ${address}\nName: ${name}`;
+            const encodedMessage = encodeURIComponent(message);
+            window.open(`https://wa.me/919957811508?text=${encodedMessage}`, '_blank');
+        }
+    </script>
+</body>
+  </html>
